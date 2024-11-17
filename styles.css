@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-ol {
-    list-style-type:decimal;
-}
-
 /* Variables */
 :root {
     --white: #fff;
@@ -74,13 +70,29 @@ nav {
     font-size: 30px;
 }
 
+/* Recip[e Cards */
+
+#recipe-wrapper {
+    flex-direction: column;
+}
+
 .recipe {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .food-img {
     width: 80%;
+    max-width: 200px;
+}
+
+ol {
+    list-style-type:decimal;
+}
+
+ol li {
+    margin-top: 8px;
 }
 
 /* Form */
@@ -129,5 +141,21 @@ h1,
 
     #search-box::placeholder {
         font-size: 1rem;
+    }
+
+    #recipe-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .recipe {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1020px) {
+    .recipe {
+        width: 28%;
     }
 }

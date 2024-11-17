@@ -1,7 +1,7 @@
 const navBars = document.querySelector('.fa-bars ')
 const navOverlay = document.querySelector('.overlay-nav')
 const navClose = document.querySelector('.nav-close')
-const displayRecipes = document.getElementById('display')
+const displayRecipes = document.getElementById('recipe-wrapper')
 
 
 // Navigation event listeners
@@ -15,7 +15,7 @@ navClose.addEventListener('click', function() {
 
 
 // Tasty API https://rapidapi.com/apidojo/api/tasty
-const url = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=10&tags=fish';
+const url = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=10&tags=chicken';
 const options = {
 	method: 'GET',
 	headers: {
