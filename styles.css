@@ -71,6 +71,26 @@ nav {
     font-size: 30px;
 }
 
+/* Form */
+
+.search {
+    justify-content: center;
+    padding: 20px;
+}
+
+#search-box {
+    width: 80%;
+    max-width: 600px;
+    padding: 6px 10px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid black;
+}
+
+#search-box::placeholder {
+    font-size: .5rem;
+}
+
 /* typography */
 
 h1,
@@ -89,5 +109,13 @@ h1,
 
     .overlay-nav-content li {
         font-size: 2rem;
+    }
+
+    #search-box {
+        padding: 10px;
+    }
+
+    #search-box::placeholder {
+        font-size: 1rem;
     }
 }
