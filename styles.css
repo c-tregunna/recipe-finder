@@ -71,6 +71,14 @@ nav {
     font-size: 30px;
 }
 
+.recipe {
+    flex-direction: column;
+}
+
+.food-img {
+    width: 80%;
+}
+
 /* Form */
 
 .search {
