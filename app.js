@@ -25,11 +25,19 @@ const options = {
 }
 
 function renderRecipe(recipe) {
+    let instructionHTML = ""
+    if(recipe.instructions && recipe.instructions.length > 0) {
+        recipe.instructions.forEach(instruction => {
+            instructionHTML += `<li>${instruction.display_text}</li>`
+        })
+    }
+
     if(recipe) {
         displayRecipes.innerHTML += `<div class="recipe flex">
                                         <p>${recipe.name}</p>
-                                        <p>${recipe.prep_time_minutes} minues</p>
+                                        <p>${recipe.prep_time_minutes} minutes</p>
                                         <img src="${recipe.thumbnail_url}" alt="${recipe.name}" class="food-img">
+                                        <ol>${instructionHTML}</ol>
                                     </div>`
     }
 }

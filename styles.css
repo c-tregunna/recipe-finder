@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ol {
+    list-style-type:decimal;
+}
+
 /* Variables */
 :root {
     --white: #fff;
@@ -13,8 +17,8 @@
 body {
     min-height: 100vh;
     background-color: #10141a;
-    background-image: linear-gradient(to bottom right,#10141a, #243757);
-    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to bottom right,#10141a, #243757);
+    background-repeat: no-repeat; */
     font-family: var(--main-font);
     color: var(--white);
     padding: 40px;
@@ -27,7 +31,6 @@ body {
 .wrapper {
     width: 90%;
     max-width: 1020px;
-    border: 1px solid black;
     height: 100vh;
     margin: auto;
 }
@@ -73,6 +76,7 @@ nav {
 
 .recipe {
     flex-direction: column;
+    justify-content: center;
 }
 
 .food-img {
