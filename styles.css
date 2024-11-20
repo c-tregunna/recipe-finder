@@ -1,22 +1,23 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-/* Variables */
 :root {
+    --black: #000;
     --white: #fff;
+    --light-grey: #e6e4e4;
+    --dark-blue: #10141a;
+    --med-blue: #243757;
     --main-font: "Outfit", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    background-color: #10141a;
-    /* background-image: linear-gradient(to bottom right,#10141a, #243757);
-    background-repeat: no-repeat; */
+    min-height: 100%;
+    background-color: var(--white);
     font-family: var(--main-font);
-    color: var(--white);
+    color: var(--black);
     padding: 40px;
 }
 
@@ -27,135 +28,109 @@ body {
 .wrapper {
     width: 90%;
     max-width: 1020px;
-    height: 100vh;
+    height: 100%;
     margin: auto;
-}
-
-/* navigation */
-
-nav {
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.overlay-nav {
-    width: 0;
-    height: 100vh;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    background-color: #10141a;
-    transition: 1s;
-}
-
-.overlay-nav-content {
-    flex-direction: column;
-    align-items: center;
-}
-
-.overlay-nav-content li {
-    margin: 10px;
-}
-
-.overlay-nav-content li:not(:first-child):hover {
-    text-decoration: underline;
-}
-
-.nav-close {
-    align-self: flex-end;
-    padding: 10px;
-    font-size: 30px;
-}
-
-/* Recip[e Cards */
-
-#recipe-wrapper {
-    flex-direction: column;
-}
-
-.recipe {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.food-img {
-    width: 80%;
-    max-width: 200px;
-}
-
-ol {
-    list-style-type:decimal;
-}
-
-ol li {
-    margin-top: 8px;
-}
-
-/* Form */
-
-.search {
-    justify-content: center;
-    padding: 20px;
-}
-
-#search-box {
-    width: 80%;
-    max-width: 600px;
-    padding: 6px 10px 10px;
-    border-radius: 6px;
-    outline: none;
-    border: 1px solid black;
-}
-
-#search-box::placeholder {
-    font-size: .5rem;
 }
 
 /* typography */
 
-h1,
-.fa-bars  {
-    margin: 0;
-    font-size: 1.625rem;
+h1 {
+    margin: 0 0 20px;
+}
+
+
+/* navigation */
+
+nav {
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    width: 30%;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+/* home page main styles */
+
+.recipe-block {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.recipe-type-wrapper {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--light-grey);
+    padding: 20px 0
+}
+
+.recipe-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-wrapper {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    margin: 20px 0;
+    transition: all .3s ease-in-out;
+}
+
+.recipe-wrapper:hover {
+    box-shadow: 0 2px 4px var(--light-grey);
+    scale: 1.1;
+}
+
+.recipe-img {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 /* Media Queries */
 
 @media (min-width: 768px) {
-    h1,
-    .fa-bars  {
-        font-size: 3rem;
-    }
-
-    .overlay-nav-content li {
-        font-size: 2rem;
-    }
-
-    #search-box {
-        padding: 10px;
-    }
-
-    #search-box::placeholder {
-        font-size: 1rem;
-    }
-
-    #recipe-wrapper {
+    nav {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .recipe {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .icon-wrapper {
+        justify-content: flex-end;
+        font-size: 2rem;
+        gap: 40px;
+    }
+
+    .recipe-block,
+    .recipe-list {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .recipe-wrapper {
         width: 40%;
     }
+    
 }
 
 @media (min-width: 1020px) {
-    .recipe {
-        width: 28%;
+    .recipe-wrapper {
+        width: 22%;
     }
+
 }
