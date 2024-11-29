@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* @layer utilities {
+    .recipe-container > div {
+      @apply border-4;
+    }
+    .recipe-container > div {
+        border-color: rgb(153, 124, 183);
+    }
+  } */
