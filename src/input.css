@@ -4,11 +4,11 @@
 
 
 
-/* @layer utilities {
-    .recipe-container > div {
+@layer utilities {
+    /* .recipe-container > div {
       @apply border-4;
-    }
+    } */
     .recipe-container > div {
-        border-color: rgb(153, 124, 183);
+        @apply w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5;
     }
-  } */
+  }

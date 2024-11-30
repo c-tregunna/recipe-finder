@@ -11,47 +11,52 @@
     <title>Cookipedia - All the recipes you will ever need</title>
 </head>
 <body class="box-border font-outfit">
-    <div class="w-11/12 max-w-screen-lg h-full mx-auto">
-        <nav class="flex flex-col items-center py-4 cursor-pointer md:flex-row md:justify-between " >
+    <div class="h-full">
+        <nav class="flex flex-col items-center py-8 w-11/12 max-w-screen-lg mx-auto cursor-pointer md:flex-row md:justify-between " >
             <h1 class="mb-5 text-4xl font-bold md:text-5xl md:mb-0">C<i class="fa-solid fa-burger"></i><i class="fa-solid fa-burger"></i>kipedia</h1>
             <div class="flex w-1/3 m-auto justify-center gap-5 text-2xl md:w-2/6 md:text-4xl md:gap-10 md:justify-end md:m-0">
                 <i class="fa-solid fa-user hover:text-gray-500 transition-color duration-300 ease-in-out"></i>
                 <i class="fa-solid fa-bookmark hover:text-gray-500 transition-color duration-300 ease-in-out"></i>
             </div>
         </nav>
+        <section class="h-72 md:h-[25em] text-black flex items-end bg-cover bg-no-repeat bg-center p-10" id="hero-container">
+            <!-- <img src="assets/recipe-hero-images.png" alt="Christmas dinner spread"> -->
+            <h2>Hero images</h2>
+        </section>
+        <section class="w-screen bg-lime-700 h-20 md:h-10 mb-6 px-8 text-center text-white flex justify-center items-center text-2xl" id="alert-bar">
+            <p id="alert-text" class="opacity-0 transition-opacity duration-500"></p>
+        </section>
 
-        <main class="flex mt-5 flex-col items-center flex-wrap cursor-pointer md:flex-row md:justify-around md:mt-3">
-            <section class="w-screen bg-lime-700 h-10 mb-6 text-white flex justify-center items-center text-2xl" id="alert-bar">
-                <p id="alert-text" class="opacity-0 transition-opacity duration-500"></p>
-            </section>
+        <main class="flex mt-5 mx-auto w-11/12 max-w-screen-lg flex-col items-center flex-wrap cursor-pointer md:flex-row md:justify-around md:mt-3">
+
             <div class="flex flex-col items-center flex-wrap py-5 border-t border-gray-300">
                 <h2 class="text-3xl font-semibold">Ingrediant Specific</h2>
                 <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3 recipe-container">
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/chicken.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="mb-3 w-full">
                         <h3 class="text-xl font-semibold">Chicken</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/beef.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Beef</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/pork.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Pork</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/fish.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Fish</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/shellfish.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Shellfish</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/vegatarian.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="rw-full mb-3">
                         <h3 class="text-xl font-semibold">Vegatarian</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/vegan.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Vegan</h3>
                     </div>
@@ -60,32 +65,32 @@
 
             <div class="flex flex-col items-center flex-wrap py-5 border-t border-gray-300">
                 <h2 class="text-3xl font-semibold">World Cuisine</h2>
-                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3">
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3 recipe-container">
+                    <div>
                         <img src="assets/british.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">British</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/chinese.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Chinese</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/indian.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Indian</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/italian.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Italian</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/thai.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Thai</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/european.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">European</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/bbq.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">BBQ</h3>
                     </div>
@@ -94,20 +99,20 @@
 
             <div class="flex flex-col items-center flex-wrap py-5 border-t border-gray-300">
                 <h2 class="text-3xl font-semibold">Time Frames</h2>
-                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3">
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3 recipe-container">
+                    <div>
                         <img src="assets/time-to-make.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Under 15 minutes</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/time-to-make.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Under 30 minutes</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/time-to-make.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Under 45 minutes</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/time-to-make.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Under 60 minutes</h3>
                     </div>
@@ -116,32 +121,32 @@
 
             <div class="flex flex-col items-center flex-wrap py-5 border-t border-gray-300">
                 <h2 class="text-3xl font-semibold">Fan Favouites</h2>
-                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3">
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3 recipe-container">
+                    <div>
                         <img src="assets/pizza.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Pizza</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/pasta.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Pasta</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/burger.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Burgers</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/desserts.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Desserts</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/party.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Party</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/bread.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Bread</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/budget.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Budget</h3>
                     </div>
@@ -150,16 +155,16 @@
 
             <div class="flex flex-col items-center flex-wrap py-5 border-t border-gray-300">
                 <h2 class="text-3xl font-semibold">Free From</h2>
-                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3">
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                <div class="flex flex-col flex-wrap gap-5 md:flex-row md:justify-around md:mt-3 recipe-container">
+                    <div>
                         <img src="assets/dairy-free.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Dairy Free</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/alcohol-free.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Alcohol Free</h3>
                     </div>
-                    <div class="w-full p-3 border border-gray-300 rounded my-5 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow md:w-2/5 lg:w-1/5">
+                    <div>
                         <img src="assets/gluten-free.png" alt="Bun Bo Hue in Bowl and Chopsticks on Table Napkin" class="w-full mb-3">
                         <h3 class="text-xl font-semibold">Gluten Free</h3>
                     </div>
