@@ -17,14 +17,149 @@
             <div class="flex w-1/3 m-auto justify-center gap-5 text-2xl md:w-2/6 md:text-4xl md:gap-10 md:justify-end md:m-0">
                 <i class="fa-solid fa-user hover:text-gray-500 transition-color duration-300 ease-in-out"></i>
                 <i class="fa-solid fa-bookmark hover:text-gray-500 transition-color duration-300 ease-in-out"></i>
+                <i class="fa-solid fa-bars hover:text-gray-500 transition-color duration-300 ease-in-out" id="show-menu"></i>
             </div>
         </nav>
         <section class="h-72 md:h-[25em] text-black flex items-end bg-cover bg-no-repeat bg-center p-10" id="hero-container">
             <!-- <img src="assets/recipe-hero-images.png" alt="Christmas dinner spread"> -->
             <h2>Hero images</h2>
         </section>
-        <section class="w-screen bg-lime-700 h-20 md:h-10 mb-6 px-8 text-center text-white flex justify-center items-center text-2xl" id="alert-bar">
+        <section class="w-screen bg-lime-700 h-20 md:h-10 px-8 text-center text-white flex justify-center items-center text-2xl" id="alert-bar">
             <p id="alert-text" class="opacity-0 transition-opacity duration-500"></p>
+        </section>
+        <section id="checkbox-menu" class="px-10 py-4 relative flex flex-col flex-wrap items-center md:flex-row md:justify-between md:items-start">
+            <div class="recipe-type-wrapper">
+                <h3>Ingrediant Specific</h3>
+                <div class="checkbox-wrapper">
+                    <label for="chicken">Chicken</label>
+                    <input type="checkbox" id="chicken">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="beef">Beef</label>
+                    <input type="checkbox" id="beef">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="pork">Pork</label>
+                    <input type="checkbox" id="pork">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="fish">fish</label>
+                    <input type="checkbox" id="fish">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="shellfish">Shellfish</label>
+                    <input type="checkbox" id="shellfish">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="vegatarian">Vegatarian</label>
+                    <input type="checkbox" id="vegatarian">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="vegan">Vegan</label>
+                    <input type="checkbox" id="vegan">
+                </div>
+            </div>
+
+            <div class="recipe-type-wrapper">
+                <h3>World Cuisine</h3>
+                <div class="checkbox-wrapper">
+                    <label for="british">British</label>
+                    <input type="checkbox" id="british">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="chinese">Chinese</label>
+                    <input type="checkbox" id="chinese">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="indian">Indian</label>
+                    <input type="checkbox" id="indian">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="italian">Italian</label>
+                    <input type="checkbox" id="italian">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="thai">Thai</label>
+                    <input type="checkbox" id="thai">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="european">European</label>
+                    <input type="checkbox" id="european">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="bbq">BBQ</label>
+                    <input type="checkbox" id="bbq">
+                </div>
+            </div>
+
+            <div class="recipe-type-wrapper">
+                <h3>Time Frames</h3>
+                <div class="checkbox-wrapper">
+                    <label for="under-15">Under 15 Minutes</label>
+                    <input type="checkbox" id="under-15">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="under-30">Under 30 Minutes</label>
+                    <input type="checkbox" id="under-30">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="under-45">Under 45 Minutes</label>
+                    <input type="checkbox" id="under-45">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="under-60">Under 60 Minutes</label>
+                    <input type="checkbox" id="under-60">
+                </div>
+            </div>
+
+            <div class="recipe-type-wrapper">
+                <h3>Fan Favouites</h3>
+                <div class="checkbox-wrapper">
+                    <label for="pizza">Pizza</label>
+                    <input type="checkbox" id="pizza">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="pasta">Pasta</label>
+                    <input type="checkbox" id="pasta">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="burgers">Burgers</label>
+                    <input type="checkbox" id="burgers">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="desserts">Desserts</label>
+                    <input type="checkbox" id="desserts">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="party">Party</label>
+                    <input type="checkbox" id="party">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="bread">Bread</label>
+                    <input type="checkbox" id="bread">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="budget">Budget</label>
+                    <input type="checkbox" id="budget">
+                </div>
+            </div>
+
+            <div class="recipe-type-wrapper">
+                <h3>Free From</h3>
+                <div class="checkbox-wrapper">
+                    <label for="dairy-free">Dairy Free</label>
+                    <input type="checkbox" id="dairy-free">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="alcohol-free">Alcohol Free</label>
+                    <input type="checkbox" id="alcohol-free">
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="gluten-free">Gluten Free</label>
+                    <input type="checkbox" id="gluten-free">
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark absolute top-5 right-5 text-2xl cursor-pointer text-2xl"></i>
         </section>
 
         <main class="flex mt-5 mx-auto w-11/12 max-w-screen-lg flex-col items-center flex-wrap cursor-pointer md:flex-row md:justify-around md:mt-3">

@@ -17,6 +17,10 @@ const heroImages = [
   }
 ]
 
+const showMenu = document.getElementById('show-menu')
+const checkboxMenu = document.getElementById('checkbox-menu')
+const closeBtn = document.getElementById('close')
+
 function showAlertMessages(messages, displayDuration = 8000) {
   let currentIndex = 0
 
@@ -44,3 +48,13 @@ function createHeroGallery() {
 }
 
 createHeroGallery()
+
+showMenu.addEventListener('click', function() {
+  checkboxMenu.style.height = 'auto'
+  checkboxMenu.style.display = ''
+})
+
+closeBtn.addEventListener('click', function() {
+  checkboxMenu.style.height = '0px'
+  checkboxMenu.style.display = 'none'
+})
