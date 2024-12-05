@@ -1,27 +1,27 @@
 const alertText = document.getElementById('alert-text')
+const heroContainer = document.getElementById('hero-container')
+const showMenu = document.getElementById('show-menu')
+const checkboxMenu = document.getElementById('checkbox-menu')
+const closeBtn = document.getElementById('close')
+
 const messages = [
     "New Christmas recipes available now 🎅🏻",
     "looking for party food to see in the New Year? Click here 🎉",
     "Make a homemade treat to give for Christmas 🎁"
 ]
 
-const heroContainer = document.getElementById('hero-container')
 const heroImages = [
   {
     photo: 'assets/recipe-hero-images.png',
     text: 'Christmas recipes to WOW your guests'
   },
   {
-    photo: 'assets/recipe-hero-images2.png',
+    photo: 'assets/recipe-hero-image2.png',
     text: 'Bake your friends some Christmas Cookies'
   }
 ]
 
-const showMenu = document.getElementById('show-menu')
-const checkboxMenu = document.getElementById('checkbox-menu')
-const closeBtn = document.getElementById('close')
-
-
+// fuction to show text in the alert bar
 function showAlertMessages(messages, displayDuration = 8000) {
   let currentIndex = 0
 
@@ -42,14 +42,34 @@ window.onload = () => {
   showAlertMessages(messages)
 }
 
-function createHeroGallery() {
-  heroContainer.style.backgroundImage = `url(${heroImages[0].photo})`
-  heroContainer.innerHTML = `<h2 class="text-4xl bg-slate-100 p-4 rounded">${heroImages[0].text}</h2>`
-                              
+
+// to produce slide showof hero images - thank you ChatGPT
+let currentIndex = 0; // Tracks the current image index
+
+function createHeroGallery(index) {
+  // Temporarily remove the fade-in class to restart the animation
+  heroContainer.style.opacity = '0';
+  
+  // Wait for the fade-out to complete, then update content and fade back in
+  setTimeout(() => {
+    heroContainer.style.backgroundImage = `url(${heroImages[index].photo})`;
+    heroContainer.innerHTML = `<h2 class="text-4xl bg-slate-100 p-4 rounded">${heroImages[index].text}</h2>`;
+    heroContainer.style.opacity = "1"; // Add the fade-in class
+  }, 500); // Delay matches the fade-out duration
 }
 
-createHeroGallery()
+function startSlideshow() {
+  createHeroGallery(currentIndex); // Display the first image
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % heroImages.length; // Increment index and loop back
+    createHeroGallery(currentIndex); // Update the hero section
+  }, 8000); // Change image every 5 seconds (adjust as needed)
+}
 
+// Initialize the slideshow
+startSlideshow();
+
+// Event Listeners
 showMenu.addEventListener('click', function() {
   checkboxMenu.style.height = 'auto'
   checkboxMenu.style.display = 'flex'
