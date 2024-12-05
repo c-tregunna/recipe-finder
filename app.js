@@ -53,7 +53,7 @@ function createHeroGallery(index) {
   // Wait for the fade-out to complete, then update content and fade back in
   setTimeout(() => {
     heroContainer.style.backgroundImage = `url(${heroImages[index].photo})`;
-    heroContainer.innerHTML = `<h2 class="text-4xl bg-slate-100 p-4 rounded">${heroImages[index].text}</h2>`;
+    heroContainer.innerHTML = `<h2 class="text-4xl bg-slate-rgba p-4 rounded">${heroImages[index].text}</h2>`;
     heroContainer.style.opacity = "1"; // Add the fade-in class
   }, 500); // Delay matches the fade-out duration
 }
