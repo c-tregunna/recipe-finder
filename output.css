@@ -635,6 +635,10 @@ video {
   height: 100vh;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -691,12 +695,24 @@ video {
   justify-content: center;
 }
 
+.gap-32 {
+  gap: 8rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded {
@@ -912,10 +928,16 @@ video {
 
 @media (min-width: 768px) {
   .recipe-type-wrapper {
+    margin-top: 1rem;
     border-bottom-width: 0px;
     border-right-width: 1px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .recipe-type-wrapper:first-of-type {
+    border-right-width: 0px;
+    border-bottom-width: 1px;
   }
 
   .recipe-type-wrapper:last-of-type {
@@ -978,6 +1000,10 @@ video {
     height: 25em;
   }
 
+  .md\:h-\[20em\] {
+    height: 20em;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -998,6 +1024,10 @@ video {
     justify-content: flex-end;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -1008,11 +1038,6 @@ video {
 
   .md\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-5xl {

@@ -12,7 +12,7 @@
         @apply w-52 flex justify-between;
     }
     .recipe-type-wrapper {
-      @apply py-6 border-b md:border-b-0 md:border-r md:px-6 md:last-of-type:border-r-0;
+      @apply py-6 border-b md:border-b-0 md:border-r md:px-6 md:last-of-type:border-r-0 md:first-of-type:border-r-0 md:first-of-type:border-b md:mt-4;
     }
     .recipe-type-wrapper > h3 {
         @apply text-xl mb-4 text-center;

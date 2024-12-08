@@ -18,11 +18,19 @@ const heroImages = [
   {
     photo: 'assets/recipe-hero-image2.png',
     text: 'Bake your friends some Christmas Cookies'
+  },
+  {
+    photo: 'assets/recipe-hero-image3.png',
+    text: 'Cocktail ideas to see in the New Year'
+  },
+  {
+    photo: 'assets/recipe-hero-image4.png',
+    text: 'Traditonal Christmas Pudding to feed the family'
   }
 ]
 
-// fuction to show text in the alert bar
-function showAlertMessages(messages, displayDuration = 8000) {
+// function to show text in the alert bar
+function showAlertMessages(messages, displayDuration = 9000) {
   let currentIndex = 0
 
   function updateMessage() {
@@ -43,11 +51,11 @@ window.onload = () => {
 }
 
 
-// to produce slide showof hero images - thank you ChatGPT
+// to produce slide show of hero images - thank you ChatGPT
 let currentIndex = 0; // Tracks the current image index
 
 function createHeroGallery(index) {
-  // Temporarily remove the fade-in class to restart the animation
+  // Temporarily remove the opacity to restart the animation
   heroContainer.style.opacity = '0';
   
   // Wait for the fade-out to complete, then update content and fade back in
@@ -55,7 +63,7 @@ function createHeroGallery(index) {
     heroContainer.style.backgroundImage = `url(${heroImages[index].photo})`;
     heroContainer.innerHTML = `<h2 class="text-4xl bg-slate-rgba p-4 rounded">${heroImages[index].text}</h2>`;
     heroContainer.style.opacity = "1"; // Add the fade-in class
-  }, 500); // Delay matches the fade-out duration
+  }, 800); // Delay matches the fade-out duration
 }
 
 function startSlideshow() {
@@ -63,7 +71,7 @@ function startSlideshow() {
   setInterval(() => {
     currentIndex = (currentIndex + 1) % heroImages.length; // Increment index and loop back
     createHeroGallery(currentIndex); // Update the hero section
-  }, 8000); // Change image every 5 seconds (adjust as needed)
+  }, 12000); // 
 }
 
 // Initialize the slideshow
