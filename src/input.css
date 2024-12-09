@@ -17,6 +17,9 @@
     .recipe-type-wrapper > h3 {
         @apply text-xl mb-4 text-center;
     }
+    ol > li {
+        @apply py-1 px-2 last-of-type:font-semibold ;
+    }
   }
 
 
