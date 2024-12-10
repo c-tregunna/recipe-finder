@@ -20,6 +20,9 @@
     ol > li {
         @apply py-1 px-2 last-of-type:font-semibold ;
     }
+    .see-more {
+        @apply line-clamp-none;
+    }
   }
 
 

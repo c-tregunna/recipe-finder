@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./*.{html,js}",
+            "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -13,7 +15,9 @@ module.exports = {
         'slate-rgba': 'rgba(226, 232, 240, .70)',
       }
        },
-    plugins: [],
+    plugins: [
+      require('flowbite/plugin')
+    ],
   }
 }
 
