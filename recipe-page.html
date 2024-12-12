@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link rel="stylesheet" href="output.css">
+    <title>Cookipedia - All the recipes you will ever need</title>
+</head>
+<body class="box-border font-outfit h-full">
+    <div class="h-full">
+        <nav class="flex flex-col items-center py-8 w-11/12 max-w-screen-lg mx-auto cursor-pointer md:flex-row md:justify-between " >
+            <a href="index.html"><h1 class="mb-5 text-4xl font-bold md:text-5xl md:mb-0">C<i class="fa-solid fa-burger"></i><i class="fa-solid fa-burger"></i>kipedia</h1></a>
+            <div class="flex w-1/3 m-auto justify-center items-center gap-5 text-2xl md:w-2/6 md:gap-10 md:justify-end md:m-0">
+                <a href="index.html"><i class="fa-solid fa-house hover:text-lime-700 transition-color duration-300 ease-in-out" data-tooltip-target="tooltip-home" data-tooltip-placement="bottom"></i></a>
+                <div id="tooltip-home" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-1 text-xs font-light text-white bg-lime-700 rounded-lg shadow-sm opacity-0 tooltip">
+                    Home
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <a href="login.html"><i class="fa-solid fa-user hover:text-lime-700 transition-color duration-300 ease-in-out" data-tooltip-target="tooltip-profile" data-tooltip-placement="bottom"></i></a>
+                <div id="tooltip-profile" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-1 text-xs font-light text-white bg-lime-700 rounded-lg shadow-sm opacity-0 tooltip">
+                    Your Profile
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+                <a href="bookmarks.html"><i class="fa-solid fa-bookmark hover:text-lime-700 transition-color duration-300 ease-in-out" data-tooltip-target="tooltip-bookmark" data-tooltip-placement="bottom"></i></a>
+                <div id="tooltip-bookmark" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-1 text-xs font-light text-white bg-lime-700 rounded-lg shadow-sm opacity-0 tooltip">
+                    Your Favourites
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+            </div>
+        </nav>
+        <main class="w-10/12 max-w-[1020px] flex flex-col mx-auto mt-20 gap-8">
+            <h2 class="text-4xl">Chicken Recipes</h2>
+            <div id="recipes" class="flex flex-col items-center flex-wrap md:flex-row md:justify-around">
+
+            </div>
+        </main>
+
+        <footer class="py-4 flex border-t border-gray-300 bg-lime-700 text-white  md:px-32">
+            <div class=" w-full mx-auto flex justify-around items-center">
+                <h1 class="text-2xl font-bold">C<i class="fa-solid fa-burger"></i><i class="fa-solid fa-burger"></i>kipedia</h1>
+                <p>&copy 2024</p>
+                <div>
+                    <p>Cookipedia</p>
+                    <p>111 Cooks Lane</p>
+                    <p>Cook Town</p>
+                    <p>CO44 0BB</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/e32ae39693.js" crossorigin="anonymous"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="recipes.js"></script>
+</body>

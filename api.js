@@ -27,9 +27,8 @@ function renderRecipe(recipe) {
     if (recipe) {
         // Add the recipe card to the DOM
         displayRecipes.innerHTML += `
-            <div class="flex w-full border border-gray-300 shadow rounded flex-col text-center my-5 p-4 gap-2">
-                <h2 class="w-full text-2xl bg-lime-700 text-white py-4">${recipe.name}</h2>
-                <p class="w-full italic">${recipe.prep_time_minutes} minutes</p>
+            <div class="flex flex-col w-full items-center md:w-5/12 border border-gray-300 shadow rounded text-center my-5 p-4 gap-2 md:first-of-type:w-full">
+                <h2 class="w-full text-xl bg-lime-700 text-white py-4">${recipe.name}</h2>
                 <img src="${recipe.thumbnail_url}" alt="${recipe.name}" class="h-32 w-32 mx-auto">
                 <ol class="list-decimal px-6 text-left line-clamp-6" id="${instructionListId}">
                     ${instructionHTML}
