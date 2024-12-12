@@ -27,7 +27,7 @@ function renderRecipe(recipe) {
     if (recipe) {
         // Add the recipe card to the DOM
         displayRecipes.innerHTML += `
-            <div class="flex flex-col w-full items-center md:w-5/12 border border-gray-300 shadow rounded text-center my-5 p-4 gap-2 md:first-of-type:w-full">
+            <div class="flex flex-col w-full items-center md:w-5/12 min-h-[500px] border border-gray-300 shadow rounded text-center my-5 p-4 gap-2 md:first-of-type:w-full">
                 <div class="w-full bg-lime-700 flex justify-around items-center px-6">
                     <h2 class="w-full text-xl bg-lime-700 text-white py-4">${recipe.name}</h2>
                     <i class="fa-solid fa-bookmark text-white text-sm hover:text-gray-900 transition-color duration-300 ease-in-out cursor-pointer"></i>

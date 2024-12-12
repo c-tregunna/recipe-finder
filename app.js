@@ -6,7 +6,7 @@ const closeBtn = document.getElementById('close')
 
 const messages = [
     "New Christmas recipes available now 🎅🏻",
-    "looking for party food to see in the New Year? Click here 🎉",
+    "Looking for party food to see in the New Year? Click here 🎉",
     "Make a homemade treat to give for Christmas 🎁"
 ]
 
@@ -61,7 +61,7 @@ function createHeroGallery(index) {
   // Wait for the fade-out to complete, then update content and fade back in
   setTimeout(() => {
     heroContainer.style.backgroundImage = `url(${heroImages[index].photo})`;
-    heroContainer.innerHTML = `<h2 class="text-4xl bg-slate-rgba p-4 rounded">${heroImages[index].text}</h2>`;
+    heroContainer.innerHTML = `<h2 class="text-2xl bg-slate-rgba p-4 rounded md:text-4xl">${heroImages[index].text}</h2>`;
     heroContainer.style.opacity = "1"; // Add the fade-in class
   }, 800); // Delay matches the fade-out duration
 }
